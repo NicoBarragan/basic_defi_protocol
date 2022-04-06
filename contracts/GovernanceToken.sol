@@ -11,8 +11,7 @@ contract GovernanceToken is ERC20 {
     uint constant GOV_FOR_LP = 250000000000000000000;
     uint public amount;
 
-    constructor(address _lpToken) ERC20("GovernanceToken", "GOV") {
-        LpToken = IERC20(_lpToken);
+    constructor() ERC20("GovernanceToken", "GOV") {
     }
 
     function mint(address _to, uint _lpReturned) external {
